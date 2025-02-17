@@ -1,4 +1,4 @@
-Thanks for downloading this template!
+Thank you for downloading this template!
 
 Template Name: Logis
 Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
