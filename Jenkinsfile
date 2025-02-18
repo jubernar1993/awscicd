@@ -1,4 +1,4 @@
-pipeline
+pipeline:
 agent any
     stages{
         stage('Stage #1'){
@@ -16,4 +16,4 @@ agent any
                 sh 'rm -rf /home/stage1'
             }
         }
-    }
+    } 
