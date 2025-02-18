@@ -13,7 +13,7 @@ agent any
         }
         stage('Stage #3'){
             steps{
-                sh 'free -M'
+                sh 'free -m'
             }
         }
     } 
