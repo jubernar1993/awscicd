@@ -8,12 +8,12 @@ agent any
         }
         stage('Stage #2'){
             steps{
-                sh 'cat /home/stage1'
+                sh 'ps -ef '
             }
         }
         stage('Stage #3'){
             steps{
-                sh 'rm -rf /home/stage1'
+                sh 'free -M'
             }
         }
     } 
