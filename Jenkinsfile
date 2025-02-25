@@ -11,9 +11,10 @@ environment{
                 git branch: "${BRANCH_NAME}", url: "${GIT_URL}"
             }
         }
-        stage('Stage #2'){
+        stage('Docker Build'){
             steps{
-                sh 'ls -la'
+                sh 'docker build -t awscicd .'
+                sh 'docker images'
             }
         }
         stage('Stage #3'){
