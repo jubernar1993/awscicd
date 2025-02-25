@@ -1,9 +1,14 @@
 pipeline{
 agent any
+
+enviroment{
+    BRANCH_NAME = 'main'
+    GIT_URL = 'https://github.com/jubernar1993/awscicd.git'
+}
     stages{
         stage('Source Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/jubernar1993/awscicd.git'
+                git branch: "${BRANCH_NAME}", url: "${GIT_URL}"
             }
         }
         stage('Stage #2'){
