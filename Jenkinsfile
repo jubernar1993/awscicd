@@ -3,12 +3,12 @@ agent any
     stages{
         stage('Source Checkout'){
             steps{
-                sh 'echo "Well i Guess this works! > /home/stage1"'
+                git branch: 'main', url: 'https://github.com/jubernar1993/awscicd.git'
             }
         }
         stage('Stage #2'){
             steps{
-                sh 'ps -ef '
+                sh 'ls -la'
             }
         }
         stage('Stage #3'){
