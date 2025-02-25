@@ -19,7 +19,7 @@ environment{
                 sh 'docker images'
             }
         }
-        stage('Stage #3'){
+        stage('Stage Three'){
             steps{
                 sh 'free -m'
             }
