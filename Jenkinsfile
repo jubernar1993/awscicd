@@ -1,7 +1,7 @@
 pipeline{
 agent any
 
-enviroment{
+environment{
     BRANCH_NAME = 'main'
     GIT_URL = 'https://github.com/jubernar1993/awscicd.git'
 }
