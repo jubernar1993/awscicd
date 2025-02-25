@@ -4,6 +4,8 @@ agent any
 environment{
     BRANCH_NAME = 'main'
     GIT_URL = 'https://github.com/jubernar1993/awscicd.git'
+    IMAGE_TAG = 'awscicd-docker'
+    IMAGE_VERSION = ${BUILD_NUMBER}
 }
     stages{
         stage('Source Checkout'){
@@ -13,7 +15,7 @@ environment{
         }
         stage('Docker Build'){
             steps{
-                sh 'docker build -t awscicd .'
+                sh 'docker build -t "${IMAGE_TAG}:${IMAGE_VERSION}" .'
                 sh 'docker images'
             }
         }
