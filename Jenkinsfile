@@ -5,7 +5,7 @@ environment{
     BRANCH_NAME = 'main'
     GIT_URL = 'https://github.com/jubernar1993/awscicd.git'
     IMAGE_TAG = 'awscicd-docker'
-    IMAGE_VERSION = ${BUILD_NUMBER}
+    IMAGE_VERSION = "${BUILD_NUMBER}"
 }
     stages{
         stage('Source Checkout'){
