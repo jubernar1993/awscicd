@@ -1,7 +1,7 @@
 pipeline{
 agent any
     stages{
-        stage('Stage #1'){
+        stage('Source Checkout'){
             steps{
                 sh 'echo "Well i Guess this works! > /home/stage1"'
             }
