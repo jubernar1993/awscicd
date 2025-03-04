@@ -11,9 +11,10 @@ pipeline{
             }
         }
 
-        stage('Test'){
+        stage('Docker Build'){
             steps{
-                sh 'echo "This is a test stage"'
+                sh 'docker build -t awscicd .'
+                sh 'docker images'
             }
         }
 
